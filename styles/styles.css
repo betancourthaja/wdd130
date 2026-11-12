@@ -1,61 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --text-align: center;
+    --title-color: midnightblue;
+    --small-padding-margin: 0.5rem;
+
     --border: 1px solid rgb(0 0 0 / 0.25);
-    --aside-padding: 0.5rem;
-    --aside-color: darkslategray;
-    --aside-backgroung-color: rgb(230 243 254/ 1);
-    --title-color: darkblue;
+    --border-radius: 1rem;
+
+    --box-padding-margin: 1rem;
+    --box-color: darkslategray;
+    --box-background-color: rgb(230 243 254/ 1);
+
+    --image-width: 200px;
+    --image-height: auto;
     --image-shadow: 0 0 30px gray;
 }
 
 nav {
     background-color: var(--title-color);
-    padding: 10px;
+    padding: var(--small-padding-margin);
 }
 
 nav a {
     color: white;
     display: block;
-    padding: 20px;
+    padding: var(--small-padding-margin);
+}
+
+main {
+    max-width: 75%;
 }
 
 h1 {
     color: var(--title-color);
+    text-align: var(--text-align);
+}
+
+img {
+    width: var(--image-width);
+    height: var(--image-height);
+    border: var(--border);
+    border-radius: var(--border-radius);
+    box-shadow: var(--image-shadow);
 }
 
 main img {
     width: 150px;
-    height: auto;
-    border: var(--border);
     padding: 2px;
-    box-shadow: var(--image-shadow);
+    float: right;
+    margin: var(--small-padding-margin);
 }
 
 p {
-    padding: 0;
-}
-
-main {
-    max-width: 80%;
+    padding: var(--small-padding-margin);
 }
 
 aside {
-    width: 75%;
-    margin: var(--aside-padding);
-    border: var(--border);
-    padding: var(--aside-padding);
-    background-color: var(--aside-backgroung-color);
-    color: var(--aside-color);
+    width: 35rem;
     text-align: var(--text-align);
+    position: relative;
 }
 
-aside img {
-    width: 200px;
-    height: auto;
+aside h2 {
+    position: absolute;
+    top: 10%;
+    left: 40%;
 }
 
 footer {
     margin-top: 1rem;
+    padding: var(--small-padding-margin);
     border-top: var(--border);
     text-align: var(--text-align);
+}
+
+/* Class Selectors */
+.box {
+    margin: var(--box-padding-margin);
+    border: var(--border);
+    padding: var(--box-padding-margin);
+    background-color: var(--box-background-color);
+    color: var(--box-color);
+    border-radius: var(--border-radius);
+    clear: both;
 }
