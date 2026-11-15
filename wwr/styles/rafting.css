@@ -1,0 +1,106 @@
+:root {
+    --white-text-color: #f3f4f6;
+    /* white smoke */
+    --accent1-color: #8e0413;
+    /* deep crimson */
+    --primary-color: #cb0b0a;
+    /* brick ember */
+    --secondary-color: #568d66;
+    /* sea green */
+    --accent2-color: #004733;
+    /* deep fprest */
+    --heading-font: "Avantgarde",
+        "TeX Gyre Adventor",
+        "URW Gothic L",
+        sans-serif;
+    --body-font: Arial,
+        sans-serif;
+    --small-shadow: 2px 2px 2px rgb(0 0 0 / 0.5);
+    --linear-gradient-background: linear-gradient(315deg, var(--accent1-color), var(--primary-color));
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--secondary-color);
+}
+
+header {
+    background: var(--linear-gradient-background);
+}
+
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    text-align: center;
+}
+
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 30px;
+    height: auto;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    padding: 16px;
+    opacity: 0.85;
+    background: var(--linear-gradient-background);
+    color: var(--white-text-color);
+}
+
+.hero article {
+    position: absolute;
+    bottom: 0;
+    padding: 2px;
+    opacity: 0.75;
+    color: var(--white-text-color);
+    background: var(--linear-gradient-background);
+    border-radius: 20px;
+    box-shadow: var(--small-shadow);
+}
+
+.hero article img {
+    float: right;
+    width: 80px;
+    margin: 0.75rem 1.5rem 0.75rem 0;
+    border-radius: 35%;
+    box-shadow: var(--small-shadow);
+}
