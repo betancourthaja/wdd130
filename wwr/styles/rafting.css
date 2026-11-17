@@ -68,6 +68,7 @@ article {
 
 footer {
     background-color: var(--secondary-color);
+    color: var(--white-text-color);
 }
 
 /* Classes */
