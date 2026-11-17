@@ -68,6 +68,9 @@ article {
 
 footer {
     background-color: var(--secondary-color);
+}
+
+footer p {
     color: var(--white-text-color);
 }
 
