@@ -54,7 +54,8 @@ main {
 h1 {
     color: var(--title-color);
     text-align: var(--text-align);
-    border-bottom: 1px solid rgb(0 0 0 / 0.20);
+    margin: var(--small-padding-margin);
+    border-bottom: 1px solid rgb(0 0 0 / 0.50);
 }
 
 img {
