@@ -1,1 +1,9 @@
-Coming up a name for the WWR Company
+Primary (Deep Pine): #0d4737 — strong for headings, nav bars, or footers with light text.
+
+Secondary (Moss Sage): #4b7f63 — softer green for secondary accents.
+
+Accent (Canyon Terracotta): #b84a27 — warm outdoor contrast instead of bright crimson.
+
+Light Surface / Text: #f4f6f4 for light text over dark sections, and #f8faf8 as a clean page canvas.
+
+
