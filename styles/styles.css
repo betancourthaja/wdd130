@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: lato;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 :root {
@@ -15,7 +15,7 @@
 
     --box-padding-margin: 1rem;
     --box-color: darkslategray;
-    --box-background-color: rgb(212 255 212 /0.75);
+    --box-background-color: rgb(212 255 212 / 0.75);
 
     --image-width: 200px;
     --image-height: auto;
