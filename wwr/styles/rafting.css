@@ -134,7 +134,7 @@ footer p {
 .hero article img {
     float: right;
     width: 80px;
-    margin: 0.75rem 1.5rem 0.75rem 0;
+    margin: 1.25rem 1.5rem 1.25rem 0.75rem;
     border-radius: 35%;
     box-shadow: var(--small-shadow);
 }
@@ -147,6 +147,12 @@ footer p {
 
 .history h2 {
     grid-column: span 3;
+    padding: auto 0;
+}
+
+.history p {
+    padding: 0;
+    text-align: justify;
 }
 
 .history img {
