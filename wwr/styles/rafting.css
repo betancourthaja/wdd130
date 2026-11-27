@@ -143,7 +143,6 @@ footer p {
     display: grid;
     grid-template-columns: 1fr 200px 1fr;
     align-items: center;
-    padding: auto 0;
 }
 
 .history h2 {
