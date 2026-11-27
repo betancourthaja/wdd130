@@ -1,22 +1,20 @@
 :root {
-    --white-text-color: #f3f4f6;
-    /* white smoke */
-    --accent1-color: #8e0413;
-    /* deep crimson */
-    --primary-color: #cb0b0a;
-    /* brick ember */
-    /* --secondary-color: #568d66; */
-    /* sea green */
-    --accent2-color: #004733;
-    /* deep forest */
+    --primary-color: #0d4737;
+    /* deep pine */
+    --secondary-color: #4b7f63;
+    /* moss sage */
+    --accent-color: #b84a27;
+    /* canyon terracotta */
+    --white-text-color: #f4f6f4;
     --heading-font: "Avantgarde",
         "TeX Gyre Adventor",
         "URW Gothic L",
         sans-serif;
     --body-font: Arial,
         sans-serif;
+    --border-radius-image: 10px;
     --small-shadow: 2px 2px 2px rgb(0 0 0 / 0.5);
-    --linear-gradient-background: linear-gradient(315deg, var(--accent1-color), var(--primary-color));
+    --linear-gradient-background: linear-gradient(315deg, var(--secondary-color), var(--primary-color));
 }
 
 * {
@@ -27,21 +25,7 @@
 
 body {
     font-family: var(--body-font);
-    color: var(--accent2-color);
-}
-
-header {
-    background: var(--linear-gradient-background);
-}
-
-header img {
-    float: right;
-    width: 150px;
-}
-
-header li,
-header a {
-    color: var(--white-text-color);
+    color: var(--primary-color);
 }
 
 header,
@@ -51,11 +35,48 @@ footer {
     margin: 0 auto;
 }
 
+header {
+    background: var(--linear-gradient-background);
+    margin-bottom: 0.5rem;
+    display: grid;
+    grid-template-columns: 125px 450px;
+    align-items: center;
+    justify-content: space-evenly;
+    height: auto;
+}
+
+header img {
+    width: 125px;
+    margin: 0.5rem;
+    border-radius: var(--border-radius-image);
+    box-shadow: var(--small-shadow);
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+}
+
+header li {
+    color: var(--white-text-color);
+    flex: 1 1 auto;
+}
+
+header a {
+    color: var(--white-text-color);
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+
 h1,
 h2 {
     font-family: var(--heading-font);
-    color: var(--primary-color);
+    color: var(--accent-color);
     text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
 }
 
 nav,
@@ -67,23 +88,18 @@ article {
 }
 
 footer {
-    background-color: var(--accent2-color);
+    background: var(--linear-gradient-background);
+    display: grid;
+    grid-template-columns: 175px 1fr 175px;
+    align-items: center;
 }
 
 footer p {
     color: var(--white-text-color);
+    text-align: center;
 }
 
 /* Classes */
-
-.socialmedia a {
-    text-decoration: none;
-}
-
-.socialmedia img {
-    width: 30px;
-    height: auto;
-}
 
 .hero {
     position: relative;
@@ -111,7 +127,7 @@ footer p {
     padding: 2px;
     opacity: 0.75;
     color: var(--white-text-color);
-    background: var(--linear-gradient-background);
+    background: var(--primary-color);
     border-radius: 20px;
     box-shadow: var(--small-shadow);
 }
@@ -122,4 +138,53 @@ footer p {
     margin: 0.75rem 1.5rem 0.75rem 0;
     border-radius: 35%;
     box-shadow: var(--small-shadow);
+}
+
+.history {
+    display: grid;
+    grid-template-columns: 1fr 200px 1fr;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.history h2 {
+    grid-column: span 3;
+}
+
+.history img {
+    width: 200px;
+    height: auto;
+    border-radius: var(--border-radius-image);
+    box-shadow: var(--small-shadow);
+}
+
+.adventures {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1rem 0;
+}
+
+.adventures img {
+    width: 150px;
+    height: auto;
+    border-radius: var(--border-radius-image);
+    box-shadow: var(--small-shadow);
+}
+
+.adventures figcaption {
+    text-align: center;
+}
+
+.socialmedia {
+    display: flex;
+    column-gap: 10px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 30px;
+    height: auto;
 }
