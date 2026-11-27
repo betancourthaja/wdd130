@@ -42,7 +42,6 @@ header {
     grid-template-columns: 125px 450px;
     align-items: center;
     justify-content: space-evenly;
-    height: auto;
 }
 
 header img {
@@ -143,7 +142,6 @@ footer p {
 .history {
     display: grid;
     grid-template-columns: 1fr 200px 1fr;
-    justify-content: space-between;
     align-items: center;
 }
 
