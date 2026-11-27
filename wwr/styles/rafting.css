@@ -143,16 +143,16 @@ footer p {
     display: grid;
     grid-template-columns: 1fr 200px 1fr;
     align-items: center;
+    padding: auto 0;
 }
 
 .history h2 {
     grid-column: span 3;
-    padding: auto 0;
 }
 
 .history p {
-    padding: 0;
     text-align: justify;
+    padding: 0;
 }
 
 .history img {
